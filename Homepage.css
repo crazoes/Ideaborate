@@ -1,0 +1,69 @@
+
+html {
+  font-family:fantasy;
+}
+
+.sidenav {
+ margin-top:0;
+ position: fixed;
+ float: left;
+ padding-top: 15px;
+ width:250px;
+ height:100%;
+}
+
+.sidenav a {
+font-size:25px;
+display:block;
+padding: 12px;
+color: mediumaquamarine;
+text-decoration: none;
+}
+
+i {
+  color:black;
+}
+
+.sidenav a:hover i{
+  transform: translate(10px);
+}
+
+.sidenav a:hover {
+  color:lightsalmon;
+}
+
+.sidenav a.active {
+  color:lightsalmon;
+}
+
+.content {
+  width:100px;
+  height:100px;
+  position: relative;
+  animation-name: move;
+  animation-duration: 4s;
+  color:black;
+}
+
+@keyframes move {
+  0% {color:black;left:0px; top:0px;}
+    25%  {color:lightsalmon;left:200px; top:0px;}
+    50%  {color:black; left:200px; top:200px;}
+    75%  {color:lightsalmon; left:0px; top:200px;}
+    100% {color:black; left:0px; top:0px;}
+}
+
+.content pre {
+  position:absolute;
+  left:430%;
+  top:90%;
+  font-size: 35px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+hr {
+      margin:0;
+      height: 12px;
+      border: 0;
+      box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
