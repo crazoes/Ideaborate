@@ -1,0 +1,51 @@
+<html>
+<head>
+<link rel=stylesheet href="index.css">
+<script src=index.js></script>
+</head>
+
+<h1>&nbsp;Hi!</h1>
+<form name=myform onsubmit="return validateform()";>
+
+<b>
+My name is &nbsp;
+<input type="text" name="Name" placeholder="Your fullname...";>
+<br>
+<br>
+
+I am from &nbsp;
+<input type="text" name="College" placeholder="Your College's name.";>
+<br>
+<br>
+
+Gender &nbsp;
+</b>
+<select name=gender>
+<option selected></option>
+<option value=Male>Male</option>
+<option value=Female>Female</option>
+<option value=Other>Other</option>
+</select>
+<br>
+<br>
+
+<b>
+Date of Birth &nbsp;
+<input type=date name=date style="font-size:15px";>
+<br>
+<br>
+
+You can reach me at &nbsp;
+<input type=text name=email placeholder="Your E-mail address">
+<br>
+<br>
+
+Set my password as &nbsp;
+<input type=Password name=Pwd placeholder="Atleast 7 characters">
+<br>
+<br>
+
+<button type=button onclick=clickbutton() id="button1">Done</button>
+</b>
+</form>
+</html>
